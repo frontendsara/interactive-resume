@@ -26,36 +26,6 @@
         font-size: 24px;
     }
 
-    /*main*/
-    .container{
-        margin: 0 auto;
-    }
-    .text-img{
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        justify-content: start;
-        padding: 0 2rem;
-        justify-content: space-around;
-    }
-
-    h1{
-        font-size: 48px;
-        font-weight: 600;
-    }
-
-    p{
-        font-size: 18px;
-        font-weight: 600;
-    }
-    
-    img{
-        width: 20%;
-        margin-left: 10rem;
-    }
-
     /*about*/
     .section{
         text-align: start;
@@ -65,6 +35,13 @@
     h2{
         font-size: 32px;
         text-transform: uppercase;
+    }
+
+    /*project*/
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        
     }
 
 }

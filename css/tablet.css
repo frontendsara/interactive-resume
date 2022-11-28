@@ -1,0 +1,35 @@
+@media (min-width:700px){
+    /*main*/
+    .container{
+        margin: 0 auto;
+    }
+    .text-img{
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: start;
+        padding: 0 2rem;
+        justify-content: space-around;
+    }
+
+    h1{
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .projects-container{
+        padding-bottom: 2rem;
+    }
+    
+    .project-card{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}

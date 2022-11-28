@@ -61,7 +61,7 @@ a{
 }
 
 .img-profil{
-    width: 40%;
+    width: 10rem;
     margin: 0;
     border-radius: 50%;
 }
@@ -85,17 +85,33 @@ h1{
 }
 
 /*project*/
+.projects{
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    padding-top: 1rem;
+}
 .projects-container{
     text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(221, 221, 221);
+
 }
 
-.card{
+.project-card{
+    width: 300px;
+    height: 350px;
+    box-shadow: 5px 5px 20px rgb(49, 49, 49);
+    margin: 10px;
     padding: 1rem;
-    background-color: rgb(221, 221, 221);
+    background-color: white;
+    
 }
 
 .img-card{
-    width: 70%;
+    width: 60%;
 }
 
 .p-card{
