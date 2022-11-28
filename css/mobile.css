@@ -1,13 +1,13 @@
 body{
     margin: 0;
-    color: white;
     font-family: 'Poppins', sans-serif;
 }
 
 header{
-    background-color: black;
+    background-color: rgb(44, 44, 44);
     position: fixed;
     width: 100%; 
+    top: 0;
 }
 
 .hb-button{
@@ -16,7 +16,7 @@ header{
     top: .5rem;
     cursor: pointer;
     color: white;
-    background-color: black;
+    background-color:rgb(44, 44, 44);
     font-size: 25px;
     border-style: none;
 }
@@ -53,6 +53,38 @@ a{
 .active{
     display: block;
 }
+
+/*main*/
+.container{
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+img{
+    width: 40%;
+    margin: 0;
+    border-radius: 50%;
+}
+
+h1{
+    margin: 0;
+}
+
+.text-img{
+    background-color: rgb(221, 221, 221);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*about me*/
+.section{
+    text-align: center;
+}
+
+
 
 
 
