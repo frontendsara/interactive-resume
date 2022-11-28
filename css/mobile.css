@@ -60,7 +60,7 @@ a{
     max-width: 90%;
 }
 
-img{
+.img-profil{
     width: 40%;
     margin: 0;
     border-radius: 50%;
@@ -82,6 +82,24 @@ h1{
 /*about me*/
 .section{
     text-align: center;
+}
+
+/*project*/
+.projects-container{
+    text-align: center;
+}
+
+.card{
+    padding: 1rem;
+    background-color: rgb(221, 221, 221);
+}
+
+.img-card{
+    width: 70%;
+}
+
+.p-card{
+    color: black;
 }
 
 
