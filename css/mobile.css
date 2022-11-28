@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: black;
+    position: fixed;
+    width: 100%; 
+}
+
+.hb-button{
+    position: absolute;
+    right: 30px;
+    top: .5rem;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    border-style: none;
+}
+
+.logo{
+    display: inline-block;
+    font-size: 18px;
+    padding: .5rem;
+    margin-left: 15px;
+}
+
+span{
+    font-family: 'Pacifico', cursive
+}
+
+.nav-container{
+    text-align: center;
+    list-style: none;
+    display: none;
+}
+
+.nav-container li{
+    text-align: center;
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+/*js*/
+.active{
+    display: block;
+}
+
+
+

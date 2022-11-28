@@ -1,0 +1,29 @@
+@media (min-width: 1024px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .hb-button{
+        display: none;
+    }
+
+    .nav-container{
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav-container li{
+        margin: 0;
+    }
+
+    .logo{
+        font-size: 24px;
+    }
+
+}
