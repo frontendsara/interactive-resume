@@ -1,8 +1,9 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right top, #1d2b64, #f8cdda);
 }
-
+/*header*/
 header{
     background-color: rgb(44, 44, 44);
     position: fixed;
@@ -88,7 +89,7 @@ h1{
 .projects{
     background-color: rgb(221, 221, 221);
     text-align: center;
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 .projects-container{
     text-align: center;
@@ -97,17 +98,16 @@ h1{
     display: flex;
     flex-direction: column;
     background-color: rgb(221, 221, 221);
-
+    padding-bottom: 2rem;
 }
 
 .project-card{
-    width: 300px;
+    width: 250px;
     height: 350px;
     box-shadow: 5px 5px 20px rgb(49, 49, 49);
     margin: 10px;
     padding: 1rem;
     background-color: white;
-    
 }
 
 .img-card{
@@ -116,6 +116,24 @@ h1{
 
 .p-card{
     color: black;
+}
+
+
+/*footer*/
+footer{
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.icon-i{
+    color: black;
+    font-size: 24px;
 }
 
 

@@ -1,4 +1,5 @@
 @media (min-width: 1024px){
+    /*header*/
     .navbar{
         display: flex;
         justify-content: space-between;
@@ -41,7 +42,6 @@
     .projects-container {
         display: flex;
         flex-direction: row;
-        
     }
 
 }

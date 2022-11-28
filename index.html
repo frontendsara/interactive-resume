@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="main.js"></script>
+    <script src="main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -17,23 +17,23 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="section">
+            <div>
                 <button class="hb-button" id="hb-btn">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-                <a class="logo" href=""><span>Sara</span></a>
+                <a class="logo" href="#main"><span>Sara</span></a>
             </div>
             
             <ul id="nav" class="nav-container">
                 <li><a href="#about">About me</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container">
-        <div class="text-img">
+        <div id="main" class="text-img">
             <div class="text">
             <h1>Hey There,<br>I'm Sara</h1>
             <p>Front End Developer</p>
@@ -79,6 +79,22 @@
                 </div>
             </div>
         </div>
+
+        <footer>
+            <h2 id="contact">Contact me</h2>
+            <div class="social">
+                <div class="icon">
+                    <a class="icon-i" href="https://github.com/frontendsara"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="icon">
+                    <a class="icon-i" href="https://www.linkedin.com/in/sara-karlsson-a5a98a12a/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="icon">
+                    <a class="icon-i" href="mailto:sara.karlsson1991@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+
     </main>
 </body>
 </html>
