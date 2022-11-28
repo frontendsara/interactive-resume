@@ -1,7 +1,7 @@
 @media (min-width: 1024px){
     /*header*/
+   
     .navbar{
-        display: flex;
         justify-content: space-between;
         padding-bottom: 0;
         height: 70px;
@@ -13,7 +13,6 @@
     }
 
     .nav-container{
-        display: flex;
         margin-right: 30px;
         flex-direction: row;
         justify-content: flex-end;
@@ -26,11 +25,20 @@
     .logo{
         font-size: 24px;
     }
+    
+    .img-profil{
+        height: 20rem;
+        margin: 0;
+    }
 
     /*about*/
     .section{
         text-align: start;
         padding: 0 2rem;
+    }
+
+    .about{
+        display: flex;
     }
 
     h2{
@@ -40,8 +48,12 @@
 
     /*project*/
     .projects-container {
-        display: flex;
         flex-direction: row;
     }
+
+    /*reuse*/
+    .flex-desk{ display: flex;}
+    .align-center { align-items: center;}
+    .text-center { text-align: center;}
 
 }

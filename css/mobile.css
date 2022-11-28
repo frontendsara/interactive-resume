@@ -1,8 +1,8 @@
 body{
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to right top, #1d2b64, #f8cdda);
+    font-family: 'Poppins', sans-serif; 
 }
+
 /*header*/
 header{
     background-color: rgb(44, 44, 44);
@@ -30,7 +30,8 @@ header{
 }
 
 span{
-    font-family: 'Pacifico', cursive
+    font-family: 'Pacifico', cursive;
+    color: #f8cdda;
 }
 
 .nav-container{
@@ -50,54 +51,39 @@ a{
     font-size: 18px;
     text-transform: uppercase;
 }
+
+
 /*js*/
 .active{
     display: block;
 }
 
 /*main*/
-.container{
-    margin: 0 auto;
-    max-width: 90%;
-}
-
-.img-profil{
-    width: 10rem;
-    margin: 0;
-    border-radius: 50%;
-}
-
-h1{
-    margin: 0;
-}
-
-.text-img{
-    background-color: rgb(221, 221, 221);
+.content-start{
+    background-color: #f8cdda;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 2rem;
 }
 
 /*about me*/
 .section{
-    text-align: center;
+    background-color: #f8dfe7;
+}
+
+.about-img{
+    width: 15rem;
+    padding: 1rem;
 }
 
 /*project*/
 .projects{
-    background-color: rgb(221, 221, 221);
-    text-align: center;
+    background-color: #f7ebef;
     padding-top: .5rem;
 }
 .projects-container{
-    text-align: center;
-    align-items: center;
     justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(221, 221, 221);
+
+    background-color: #f7ebef;
     padding-bottom: 2rem;
 }
 
@@ -111,22 +97,16 @@ h1{
 }
 
 .img-card{
-    width: 60%;
+    width: 10rem;
 }
 
-.p-card{
+.a-card{
     color: black;
 }
 
 
 /*footer*/
-footer{
-    text-align: center;
-}
-
 .social{
-    display: flex;
-    justify-content: center;
     gap: 1rem;
     padding-bottom: 2rem;
 }
@@ -135,6 +115,16 @@ footer{
     color: black;
     font-size: 24px;
 }
+
+/*reuse*/
+.flex{ display: flex;}
+.flex-column{ flex-direction: column;}
+.justify-center{ justify-content: center;}
+.align-center{ align-items: center;}
+.text-center{ text-align: center;}
+.p1 {padding: 1rem;}
+.m0{ margin: 0;}
+
 
 
 

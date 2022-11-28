@@ -16,15 +16,15 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div>
+        <nav class="navbar flex-desk">
+          
                 <button class="hb-button" id="hb-btn">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <a class="logo" href="#main"><span>Sara</span></a>
-            </div>
             
-            <ul id="nav" class="nav-container">
+            
+            <ul id="nav" class="nav-container flex-desk">
                 <li><a href="#about">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -32,34 +32,33 @@
         </nav>
     </header>
 
-    <main class="container">
-        <div id="main" class="text-img">
+    <main>
+        <div id="main" class="content-start flex flex-column justify-center align-center">
             <div class="text">
-            <h1>Hey There,<br>I'm Sara</h1>
-            <p>Front End Developer</p>
-        </div>
-            <img class="img-profil" src="./img/profilbild.png" alt="">
+                <h1>Hey There,<br>I'm Sara</h1>
+                <p>Front End Developer</p>
+            </div>
         </div>
 
-        <div class="section">
-            <div class="about">
-                <h2 id="about">About Me</h2>
+        <div class="section text-center">
+            <div class="container">
+                <h2 class="m0 p1" id="about">About Me</h2>
+            <div class="flex-desk align-center">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, repellat sunt magnam quae neque inventore praesentium molestiae ut nesciunt numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed deserunt, quibusdam magnam reiciendis dolores accusantium hic quisquam adipisci similique delectus.</p>
+                <img class="about-img" src="./img/about-me.jpg" alt="">
             </div>
-            <div>
-                <img src="./img/profilbild.jpg" alt="">
             </div>
         </div>
        
-        <div class="projects" id="projects">
+        <div class="projects text-center" id="projects">
             <h2>Projects</h2>
-            <div class="projects-container">
+            <div class="projects-container text-center align-center flex flex-column">
                 <div class="project-card">
                     <img class="img-card" src="./img/and-other-stories.jpg" alt="">
                     <h3>Copy a Website</h3>
                     <p>Me and my classmate did a copy of a webb page as our first project in HTML and CSS.</p>
                     <hr>
-                    <p><a class="p-card" href="">View here</a></p>
+                    <p><a class="a-card" href="">View here</a></p>
                 </div>
 
                 <div class="project-card">
@@ -67,7 +66,7 @@
                     <h3>Renew a Webpage</h3>
                     <p>Me and my classmate renewed a webpage.</p>
                     <hr>
-                    <p><a class="p-card" href="">View here</a></p>
+                    <p><a class="a-card" href="">View here</a></p>
                 </div>
 
                 <div class="project-card">
@@ -75,14 +74,14 @@
                     <h3>Textbased Game</h3>
                     <p>My first own project in Javascript. To create a textbased game.</p>
                     <hr>
-                    <p><a class="p-card" href="">View here</a></p>
+                    <p><a class="a-card" href="">View here</a></p>
                 </div>
             </div>
         </div>
 
-        <footer>
+        <footer class="text-center">
             <h2 id="contact">Contact me</h2>
-            <div class="social">
+            <div class="social flex justify-center">
                 <div class="icon">
                     <a class="icon-i" href="https://github.com/frontendsara"><i class="fa-brands fa-github"></i></a>
                 </div>
