@@ -1,17 +1,33 @@
-
 window.addEventListener('DOMContentLoaded', main);
 
 function main(){
-    addEventListeners();
+    addEventListeners();  
 }
 
-function addEventListeners (){
-    let navBarToggle = document.getElementById("hb-btn");
-    navBarToggle.onclick = mainNav;
+function addEventListeners () {
+    const navBarToggle = document.getElementById("hb-btn");
+    navBarToggle.addEventListener("click", toggleNav);
+
+    const listItems = document.querySelectorAll("header nav li");
+    for (const li of listItems) {
+        li.addEventListener("click", handleNavItemClick);
+    }
 }
 
-function mainNav (){
-    let ul = document.querySelector("ul");
+function handleNavItemClick (event) {
+    setAvtiveNavItem(event);
+    toggleNav();
+}
+
+function setAvtiveNavItem(event){
+    const activeLI = document.querySelector("header nav li .setactive");
+    activeLI?.classList.remove("setactive");
+    const li = event.currentTarget;
+    li.classList.add("setactive");
+}
+
+function toggleNav (){
+    const ul = document.querySelector("ul");
     ul.classList.toggle("active");
     
 }

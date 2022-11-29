@@ -3,4 +3,12 @@
     margin: 0 auto;
     max-width: 80%;
    }
+
+   .p-text{
+    padding: 1rem;
+   }
+
+   .project-card{
+    margin: 1rem;
+   }
 }
