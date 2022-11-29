@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif; 
+    background-image: linear-gradient(#dd5e89, #f7bb97);
 }
 
 /*header*/
@@ -31,7 +32,7 @@ header{
 
 span{
     font-family: 'Pacifico', cursive;
-    color: #f8cdda;
+    color: #f7bb97;
 }
 
 .nav-container{
@@ -52,7 +53,6 @@ a{
     text-transform: uppercase;
 }
 
-
 /*js*/
 .active{
     display: block;
@@ -60,16 +60,12 @@ a{
 
 /*main*/
 .content-start{
-    background-color: #f8cdda;
+    
     height: 100vh;
     margin-top: 2rem;
 }
 
 /*about me*/
-.section{
-    background-color: #f8dfe7;
-}
-
 .about-img{
     width: 15rem;
     padding: 1rem;
@@ -77,13 +73,13 @@ a{
 
 /*project*/
 .projects{
-    background-color: #f7ebef;
+    
     padding-top: .5rem;
 }
 .projects-container{
     justify-content: space-around;
 
-    background-color: #f7ebef;
+    
     padding-bottom: 2rem;
 }
 
@@ -95,6 +91,8 @@ a{
     padding: 1rem;
     background-color: white;
 }
+
+
 
 .img-card{
     width: 10rem;
@@ -115,6 +113,8 @@ a{
     color: black;
     font-size: 24px;
 }
+
+
 
 /*reuse*/
 .flex{ display: flex;}
