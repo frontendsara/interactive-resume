@@ -31,14 +31,15 @@
         margin: 0;
     }
 
+  
+
     /*about*/
     .section{
         text-align: start;
-        padding: 0 2rem;
     }
 
-    .about{
-        display: flex;
+    .about-img{
+        width: 18rem;
     }
 
     h2{
@@ -52,6 +53,15 @@
     /*project*/
     .projects-container {
         flex-direction: row;
+    }
+
+    .project-card{
+        width: 18rem;
+        height: 18rem;
+    }
+    /*footer*/
+    .icon-i{
+        font-size: 2rem;
     }
 
     /*reuse*/
