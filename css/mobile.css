@@ -1,9 +1,6 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif; 
-    /*background-image: url(/img/abstractbackground.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;*/
     background-color: rgb(235, 235, 176);
 }
 
@@ -21,6 +18,14 @@ header{
     cursor: pointer;
     color: white;
     font-size: 1.5rem;
+}
+
+i:hover{
+    opacity: .6;
+}
+
+a:hover{
+    opacity: .6;
 }
 
 .logo{
@@ -49,7 +54,7 @@ span{
 a{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
@@ -86,13 +91,13 @@ h1{
 
 .start-text::before{
     background-color: rgb(235, 235, 176);
-    animation: typewriter 4s steps(24) forwards;
+    animation: typewriter 4s steps(21) forwards;
 }
 
 .start-text::after{
     width: .15rem;
     background: black;
-    animation: typewriter 4s steps(24) forwards;
+    animation: typewriter 4s steps(21) forwards;
 }
 
 @keyframes typewriter {
@@ -133,13 +138,12 @@ h2{
 
 .project-card{
     width: 250px;
-    height: 400px;
+    height: 250px;
     box-shadow: 5px 5px 20px rgb(49, 49, 49);
     margin: 10px;
     padding: 1rem;
     background-color: white;
 }
-
 
 
 .img-card{
