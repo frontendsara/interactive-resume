@@ -104,7 +104,7 @@ h1{
 }
 
 .start-text::before{
-    background-color: rgb(253, 253, 236);
+    background-color: #F5EBE0;
     animation: typewriter 4s steps(21) forwards;
 }
 
