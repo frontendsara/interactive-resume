@@ -1,9 +1,10 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif; 
-    background-image: url(/img/abstractbackground.jpg);
+    /*background-image: url(/img/abstractbackground.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: rgb(235, 235, 176);
 }
 
 /*header*/
@@ -66,6 +67,36 @@ a{
 
 h1{
     font-size: 3rem;
+}
+
+.start-text{
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+}
+
+.start-text::before,
+.start-text::after{
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.start-text::before{
+    background-color: rgb(235, 235, 176);
+    animation: typewriter 4s steps(24) forwards;
+}
+
+.start-text::after{
+    width: .15rem;
+    background: black;
+    animation: typewriter 4s steps(24) forwards;
+}
+
+@keyframes typewriter {
+    to {left: 100%}
 }
 
 p{
