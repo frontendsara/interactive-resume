@@ -1,12 +1,14 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif; 
-    background-image: linear-gradient(#484848, #b4b4b4);
+    background-image: url(/img/abstractbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*header*/
 header{
-    background-color: rgb(44, 44, 44);
+    background-color: rgba(0,0,0,0.6);
     position: fixed;
     width: 100%; 
     top: 0;
@@ -14,20 +16,17 @@ header{
 
 .hb-button{
     position: absolute;
-    right: 30px;
-    top: .5rem;
+    right: 1rem;
     cursor: pointer;
     color: white;
-    background-color:rgb(44, 44, 44);
-    font-size: 25px;
-    border-style: none;
+    font-size: 1.5rem;
 }
 
 .logo{
     display: inline-block;
     font-size: 18px;
     padding: .5rem;
-    margin-left: 15px;
+    margin-left: 1rem;
 }
 
 span{
@@ -58,14 +57,11 @@ a{
     display: block;
 }
 
-.setactive{
-    background-color: rgb(44, 44, 44);
-}
+
 
 /*main*/
 .content-start{
     height: 100vh;
-    margin-top: 4rem;
 }
 
 h1{

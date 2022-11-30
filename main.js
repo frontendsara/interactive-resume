@@ -15,15 +15,13 @@ function addEventListeners () {
 }
 
 function handleNavItemClick (event) {
-    setAvtiveNavItem(event);
+    getToNavItem(event);
     toggleNav();
 }
 
-function setAvtiveNavItem(event){
-    const activeLI = document.querySelector("header nav li .setactive");
-    activeLI?.classList.remove("setactive");
+function getToNavItem(event){
+    const activeLI = document.querySelector("header nav li");
     const li = event.currentTarget;
-    li.classList.add("setactive");
 }
 
 function toggleNav (){
