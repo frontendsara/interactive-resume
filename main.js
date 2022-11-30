@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', main);
-
+/**Program starts */
 function main(){
     addEventListeners();  
 }
@@ -29,11 +29,3 @@ function toggleNav (){
     ul.classList.toggle("active");
     
 }
-
-//spara, original burgermenu
-/*let mainNav = document.getElementById("nav");
-let navBarToggle = document.getElementById("hb-btn");*/
-
-/*navBarToggle.addEventListener("click", function(){
-    mainNav.classList.toggle("active");
-});*/
