@@ -31,8 +31,6 @@
         margin: 0;
     }
 
-  
-
     /*about*/
     .section{
         text-align: start;
@@ -68,5 +66,5 @@
     .flex-desk{ display: flex;}
     .align-center { align-items: center;}
     .text-center { text-align: center;}
-
+    .column-desk { flex-direction: column;}
 }

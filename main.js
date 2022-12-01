@@ -1,13 +1,12 @@
-window.addEventListener('DOMContentLoaded', main);
-window.addEventListener("scroll", reveal);
+window.addEventListener("DOMContentLoaded", main);
 
 /**Program starts */
 function main(){
     addEventListeners();
-    reveal () 
+    addOnscroll();
 }
 
-/**A function that handle the clicks on the webpage*/
+/**A function that handles the clicks on the webpage*/
 function addEventListeners () {
     const navBarToggle = document.getElementById("hb-btn");
     navBarToggle.addEventListener("click", toggleNav);
@@ -24,20 +23,25 @@ function handleNavItemClick (event) {
     toggleNav();
 }
 
-/**A function that get us to the selectet part of the menu*/
+/**A function that will get us to the selected part of the menu*/
 function getToNavItem(event){
     const activeLI = document.querySelector("header nav li");
     const li = event.currentTarget;
 }
 
-/**A function that show the hamburgermenu*/
+/**A function that reveals the options on the hamburger menu*/
 function toggleNav (){
     const ul = document.querySelector("ul");
     ul.classList.toggle("active"); 
 }
 
-/**A function that reveals content when scroll up and down on the page*/
-function reveal () {
+/**A function that gets the scroll activity */
+function addOnscroll () {
+    window.addEventListener("scroll", revealContent);
+}
+
+/**A function that fades in the content when scrolling up and down on the page*/
+function revealContent () {
     const reveals = document.querySelectorAll(".reveal");
 
     for (let i = 0; i < reveals.length; i++){
