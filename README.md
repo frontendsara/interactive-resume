@@ -1,6 +1,6 @@
 #Interactive resume
 
-DEMO [here](https://frontendsara.github.io/resume-lab/).
+DEMO [here](https://frontendsara.github.io/interactive-resume/).
 
 In this project, I designed my own resume whit HTML, CSS and Javascript. 
 
