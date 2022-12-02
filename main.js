@@ -6,7 +6,7 @@ function main(){
     addOnscroll();
 }
 
-/**A function that handles the clicks on the webpage*/
+/**A function that handles the clicks on the webpage for the hamburger menu*/
 function addEventListeners () {
     const navBarToggle = document.getElementById("hb-btn");
     navBarToggle.addEventListener("click", toggleNav);
