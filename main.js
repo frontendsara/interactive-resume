@@ -17,7 +17,7 @@ function addEventListeners () {
     }
 }
 
-/**Function who calls other functions */
+/**Function who calls other functions to the hamburger menu*/
 function handleNavItemClick (event) {
     getToNavItem(event);
     toggleNav();
