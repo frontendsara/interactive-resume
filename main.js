@@ -1,4 +1,5 @@
-window.addEventListener("DOMContentLoaded", main);
+// Listen for DOM content to be loaded
+document.addEventListener("DOMContentLoaded", main);
 
 /**Program starts */
 function main(){
@@ -6,7 +7,7 @@ function main(){
     addOnscroll();
 }
 
-/**A function that handles the clicks on the webpage for the hamburger menu*/
+/**A function that handles the clicks on the webpage for the hamburger menu and scrolling */
 function addEventListeners () {
     const navBarToggle = document.getElementById("hb-btn");
     navBarToggle.addEventListener("click", toggleNav);
@@ -14,6 +15,16 @@ function addEventListeners () {
     const listItems = document.querySelectorAll("header nav li");
     for (const li of listItems) {
         li.addEventListener("click", handleNavItemClick);
+    }
+
+    let reveals = document.querySelectorAll(".reveal");
+    if(!('IntersectionObserver' in window)) {
+      window.addEventListener("scroll", revealContent);
+    } else {
+      let observer = new IntersectionObserver(revealContent);
+      reveals.forEach(reveal => {
+        observer.observe(reveal);
+      });
     }
 }
 
@@ -35,24 +46,13 @@ function toggleNav (){
     ul.classList.toggle("active"); 
 }
 
-/**A function that gets the scroll activity */
-function addOnscroll () {
-    window.addEventListener("scroll", revealContent);
-}
-
 /**A function that fades in the content when scrolling up and down on the page*/
-function revealContent () {
-    const reveals = document.querySelectorAll(".reveal");
-
-    for (let i = 0; i < reveals.length; i++){
-        let windowHeight = window.innerHeight;
-        let elementTop = reveals[i].getBoundingClientRect().top;
-        let elementVisible = 150;
-
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-        }else {
-            reveals[i].classList.remove("active");
-        }
-    }
+function revealContent (entries) {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0) {
+        entry.target.classList.add("active");
+      }else {
+        entry.target.classList.remove("active");
+      }
+    });
 }
